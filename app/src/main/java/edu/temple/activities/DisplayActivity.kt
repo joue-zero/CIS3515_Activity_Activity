@@ -17,6 +17,10 @@ class DisplayActivity : AppCompatActivity() {
             setTextSize(textSize.toFloat())
         }
 
+        // when click the back button, go back to the previous activity
+        findViewById<TextView>(R.id.button).setOnClickListener {
+            finish()
+        }
 
     }
 }
